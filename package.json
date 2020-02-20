@@ -1,16 +1,14 @@
 {
-  "name": "jasessment",
-  "homepage": "https://not-zorro.github.io/jasessment",
+  "name": "word_watch",
+  "homepage": "https://not-zorro.github.io/word_watch",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "repository": "https://github.com/turingschool-examples/word_watch",
+  "repository": "https://github.com/Not-Zorro/word_watch",
   "scripts": {
     "test": "mocha-webpack -r babel-polyfill -r src/test/setup.js --webpack-config webpack.config-test.babel.js \"src/**/*.test.js\"",
     "build": "webpack",
-    "start": "webpack-dev-server --hot --inline",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "start": "webpack-dev-server --hot --inline"
   },
   "devDependencies": {
     "babel-core": "^6.25.0",
@@ -19,7 +17,7 @@
     "babel-preset-env": "^1.6.0",
     "babel-register": "^6.24.1",
     "chai": "^4.0.2",
-    "css-loader": "^0.28.4",
+    "css-loader": "^0.28.4", 
     "gh-pages": "^2.2.0",
     "jquery": "^3.2.1",
     "jsdom": "^11.1.0",
