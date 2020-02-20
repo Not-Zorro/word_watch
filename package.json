@@ -1,6 +1,6 @@
 {
   "name": "jasessment",
-  "homepage": "https://not-zorro.github.io/jasessment.git",
+  "homepage": "https://not-zorro.github.io/jasessment",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -9,8 +9,8 @@
     "test": "mocha-webpack -r babel-polyfill -r src/test/setup.js --webpack-config webpack.config-test.babel.js \"src/**/*.test.js\"",
     "build": "webpack",
     "start": "webpack-dev-server --hot --inline",
-    "predeploy": "npm install",
-    "deploy": "npm start"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "devDependencies": {
     "babel-core": "^6.25.0",
